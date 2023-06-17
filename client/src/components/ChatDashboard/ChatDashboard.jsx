@@ -3,7 +3,7 @@ import { Sidebar } from "../Sidebar";
 import { OpenConversation } from "../OpenConversation";
 import { useConversations } from "../../contexts/ConversationsProvider";
 
-function Dashboard({ id }) {
+function ChatDashboard({ id }) {
   const { selectedConversation } = useConversations();
 
   return (
@@ -13,7 +13,7 @@ function Dashboard({ id }) {
     </div>
   );
 }
-export default Dashboard;
+export default ChatDashboard;
 
 /* import { Sidebar } from "../Sidebar";
 import {

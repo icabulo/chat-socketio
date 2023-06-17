@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const PREFIX = "WAChat-clone";
+const PREFIX = "PAQUERGO-chat";
 export default function useLocalStorage(key, initialValue) {
   const prefixedKey = `${PREFIX}-${key}`;
   // console.log("INSIDE local", key, initialValue);

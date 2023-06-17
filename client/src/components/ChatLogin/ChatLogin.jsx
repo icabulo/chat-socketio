@@ -2,6 +2,7 @@
 import { useRef } from "react";
 import { Container, Form, Button } from "react-bootstrap";
 import { nanoid } from "nanoid";
+// import { nanoid } from "@reduxjs/toolkit";
 
 function ChatLogin({ onIdSubmit }) {
   const idRef = useRef();

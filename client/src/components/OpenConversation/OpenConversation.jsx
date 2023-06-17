@@ -16,7 +16,7 @@ function OpenConversation() {
   //   console.log("Conversacion", selectedConversation);
   function handleSubmit(e) {
     e.preventDefault();
-    console.log("sended message");
+    // console.log("sended message");
     sendMessage(
       selectedConversation.recipients.map((r) => r.id),
       text
@@ -51,7 +51,9 @@ function OpenConversation() {
                 // ref={lastMessage ? setRef : null}
                 key={index}
                 className={`my-1 d-flex flex-column ${
-                  message.fromMe ? "align-self-end" : ""
+                  message.fromMe
+                    ? "align-self-end align-items-end"
+                    : "align-items-start"
                 }`}
               >
                 <div
